@@ -1,29 +1,42 @@
 # Aplikasi Data Warga Kelurahan
 
-Aplikasi management data warga berbasis Django dengan Class-Based Views untuk tugas kuliah.
+Aplikasi manajemen data warga berbasis **Django** dengan **Class-Based Views (CBV)**.  
+Dibuat sebagai proyek tugas kuliah, tapi dikemas dengan struktur profesional dan clean code.
 
-## ✨ Fitur
-- ✅ Model Warga dengan field lengkap (NIK, nama, alamat, telepon)
-- ✅ Admin Django untuk management data
-- ✅ Class-Based ListView (CBV)
-- ✅ Template untuk menampilkan daftar warga
-- ✅ 5 data contoh (Wahyu, Fatih, Faqih, Ibrahim, Dhea)
+---
+
+## ✨ Fitur Utama
+- ✅ Model **Warga** lengkap (NIK, Nama, Alamat, Telepon)  
+- ✅ Admin Django untuk manajemen data cepat  
+- ✅ **Class-Based Views** untuk tampilan daftar warga  
+- ✅ Template rapi untuk menampilkan daftar warga   
+
+---
 
 ## 🛠️ Teknologi
-- Django 4.2+
-- SQLite
-- Python 3.8+
-- Class-Based Views
+- Python 3.8+  
+- Django 4.2+  
+- SQLite (default, mudah diganti ke database lain)  
+- Class-Based Views (CBV)  
+
+---
 
 ## 🚀 Cara Menjalankan
+1. Install dependencies:
 ```bash
-# Install dependencies
 pip install django
+Setup database:
 
-# Setup database
+bash
+Copy code
 python manage.py migrate
+Jalankan server:
 
-# Jalankan server
+bash
+Copy code
 python manage.py runserver
-Buka http://127.0.0.1:8000/warga/ untuk melihat daftar warga
-Buka http://127.0.0.1:8000/admin/ untuk management data
+Buka di browser:
+
+Daftar warga: http://127.0.0.1:8000/warga/
+
+Admin panel: http://127.0.0.1:8000/admin/
