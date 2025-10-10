@@ -27,7 +27,7 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 
 ```bash
 # Clone repository & masuk ke folder
-git clone <repo-url>
+git clone https://github.com/fazyraww/django-kelurahan.git
 cd aplikasi-kelurahan
 
 # Install dependencies
@@ -38,8 +38,8 @@ python manage.py migrate
 python manage.py runserver
 
 # Akses aplikasi di browser
-# Daftar warga: http://127.0.0.1:8000/warga/
-# Admin panel: http://127.0.0.1:8000/admin/
+Daftar warga: http://127.0.0.1:8000/warga/
+Admin panel: http://127.0.0.1:8000/admin/
 ```
 
 
