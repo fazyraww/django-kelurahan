@@ -23,28 +23,17 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 
 ---
 
-## 🚀 Cara Menjalankan
+🚀 Cara Menjalankan Aplikasi
 
-1. **Clone repository** (atau download ZIP):
-```bash
-git clone https://github.com/USERNAME/aplikasi-kelurahan.git
-cd aplikasi-kelurahan
-Install dependencies:
+Clone repository atau download ZIP dari GitHub, kemudian masuk ke folder aplikasi-kelurahan.
 
-bash
-Copy code
-pip install django
-Setup database:
+Pastikan Python 3.8+ sudah terinstall, lalu install Django dengan menjalankan pip install django.
 
-bash
-Copy code
-python manage.py migrate
-Jalankan server:
+Siapkan database dengan menjalankan python manage.py migrate.
 
-bash
-Copy code
-python manage.py runserver
-Akses aplikasi di browser:
+Jalankan server Django dengan perintah python manage.py runserver.
+
+Buka browser dan akses:
 
 Daftar warga: http://127.0.0.1:8000/warga/
 
