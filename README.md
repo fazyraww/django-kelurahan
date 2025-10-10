@@ -25,8 +25,6 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 
 🚀 Cara Menjalankan Aplikasi
 
-🚀 Cara Menjalankan Aplikasi
-
 ```bash
 # Clone repository & masuk ke folder
 git clone <repo-url>
