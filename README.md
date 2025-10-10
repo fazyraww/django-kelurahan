@@ -25,6 +25,9 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 
 🚀 Cara Menjalankan Aplikasi
 
+🚀 Cara Menjalankan Aplikasi
+
+```bash
 # Clone repository & masuk ke folder
 git clone <repo-url>
 cd aplikasi-kelurahan
@@ -39,4 +42,6 @@ python manage.py runserver
 # Akses aplikasi di browser
 # Daftar warga: http://127.0.0.1:8000/warga/
 # Admin panel: http://127.0.0.1:8000/admin/
+```
+
 
