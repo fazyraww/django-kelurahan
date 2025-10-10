@@ -1,16 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar Warga Kelurahan</title>
+    <title>Data Warga Kelurahan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .info-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-collapse: collapse;
+        }
+        
+        th {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .total-warga {
+            background: #2ecc71;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <h1>Daftar Warga</h1>
-    <ul>
-        {% for warga in object_list %}
-            <li>{{ warga.nama_lengkap }} - NIK: {{ warga.nik }}</li>
-        {% empty %}
-            <li>Belum ada data warga yang terdaftar.</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <div class="header">
+            <h1>Data Warga Kelurahan</h1>
+            <p>Sistem Terdistribusi</p>
+        </div>
+        
+        <div class="total-warga">
+            Total Warga Terdaftar: {{ object_list|length }} Orang
+        </div>
+        
+        <a href="/admin/" class="btn">Tambah Data Warga</a>
+        
+        <div class="info-box">
+            <strong>Keterangan:</strong> Data ini ditampilkan menggunakan Django Class-Based Views
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Lengkap</th>
+                    <th>NIK</th>
+                    <th>Alamat</th>
+                    <th>No Telepon</th>
+                    <th>Tanggal Daftar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for warga in object_list %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td><strong>{{ warga.nama_lengkap }}</strong></td>
+                    <td>{{ warga.nik }}</td>
+                    <td>{{ warga.alamat }}</td>
+                    <td>
+                        {% if warga.no_telepon %}
+                            {{ warga.no_telepon }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>{{ warga.tanggal_registrasi|date:"d-m-Y" }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="6" class="no-data">
+                        Belum ada data warga. 
+                        <a href="/admin/" style="color: #3498db;">Klik di sini untuk menambah data</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 20px; text-align: center; color: #7f8c8d; font-size: 14px;">
+            Aplikasi Data Warga - Dibuat dengan Django
+        </div>
+    </div>
 </body>
 </html>
