@@ -25,16 +25,16 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 
 🚀 Cara Menjalankan Aplikasi
 
-Clone repository atau download ZIP dari GitHub, kemudian masuk ke folder aplikasi-kelurahan.
+Clone repo dan masuk ke folder proyek
 
-Pastikan Python 3.8+ sudah terinstall, lalu install Django dengan menjalankan pip install django.
+Install Django: pip install django
 
-Siapkan database dengan menjalankan python manage.py migrate.
+Setup database: python manage.py migrate
 
-Jalankan server Django dengan perintah python manage.py runserver.
+Jalankan server: python manage.py runserver
 
-Buka browser dan akses:
+Akses:
 
-Daftar warga: http://127.0.0.1:8000/warga/
+Daftar warga → http://127.0.0.1:8000/warga/
 
-Admin panel: http://127.0.0.1:8000/admin/
+Admin panel → http://127.0.0.1:8000/admin/
