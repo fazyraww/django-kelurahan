@@ -16,10 +16,11 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 ---
 
 ## 🛠️ Teknologi
-- **Python** 3.8+  
-- **Django** 4.2+  
-- **SQLite** (default, mudah diganti ke database lain)  
-- **Class-Based Views (CBV)**  
+
+- `🐍 Python` 3.8+  
+- `🌐 Django` 4.2+  
+- `💾 SQLite` (default, mudah diganti ke database lain)  
+- `🏗️ Class-Based Views (CBV)`  
 
 ---
 
