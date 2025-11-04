@@ -29,7 +29,7 @@ Dibuat sebagai proyek tugas kuliah, namun dirancang dengan struktur **clean code
 ```bash
 # Clone repository & masuk ke folder
 git clone https://github.com/fazyraww/django-kelurahan.git
-cd aplikasi-kelurahan
+cd django-kelurahan
 
 # Install dependencies
 pip install django
