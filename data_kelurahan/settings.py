@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'warga',
     'rest_framework',
+    'rest_framework.authtoken',
+    'django_filters',  # Tambahkan baris ini
 ]
 
 MIDDLEWARE = [
