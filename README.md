@@ -87,7 +87,4 @@ django-kelurahan/
 ├── manage.py              # Django CLI entry point
 ├── requirements.txt       # Dependency Python
 └── README.md              # Dokumentasi project
-```
 
-
-> Dibuat dengan ❤️ menggunakan Django — rapi, scalable, dan siap dikembangkan.
