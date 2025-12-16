@@ -4,7 +4,7 @@ from .models import Warga, Pengaduan
 class WargaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Warga
-        fields = ['id', 'nim', 'nama_lengkap', 'alamat', 'no_telepon']
+        fields = ['id', 'nik', 'nama_lengkap', 'alamat', 'no_telepon']
 
 class PengaduanSerializer(serializers.ModelSerializer):
     class Meta:
