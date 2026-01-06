@@ -55,6 +55,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 ```bash
 pip install -r requirements.txt
+pip install django-cors-headers
 ```
 
 ### 4️⃣ Migrasi Database
@@ -62,7 +63,9 @@ pip install -r requirements.txt
 ```bash
 python manage.py makemigrations
 python manage.py migrate
-```
+
+``` bash
+python manage.py createsuperuser
 
 ### 5️⃣ Jalankan Server
 
