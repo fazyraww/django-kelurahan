@@ -75,7 +75,13 @@ python manage.py runserver
 Buka browser dan akses:
 
 ```
-http://127.0.0.1:8000/
+http://127.0.0.1:8000/api
+## 📖 Dokumentasi API
+
+Project ini dilengkapi dengan dokumentasi API interaktif yang memudahkan pengembang frontend:
+
+* **Swagger UI**: [http://127.0.0.1:8000/api/schema/swagger-ui/](http://127.0.0.1:8000/api/schema/swagger-ui/)
+* **Redoc**: [http://127.0.0.1:8000/api/schema/redoc/](http://127.0.0.1:8000/api/schema/redoc/)
 ```
 
 ---
