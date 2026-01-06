@@ -48,13 +48,14 @@ cd django-kelurahan
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 ### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+pip install django-cors-headers
 ```
 
 ### 4️⃣ Migrasi Database
@@ -62,6 +63,7 @@ pip install -r requirements.txt
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+python manage.py createsuperuser
 ```
 
 ### 5️⃣ Jalankan Server
