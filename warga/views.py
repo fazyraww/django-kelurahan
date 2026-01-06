@@ -77,6 +77,11 @@ class PengaduanListAPIView(ListCreateAPIView):
     serializer_class = PengaduanSerializer
     permission_classes = [AllowAny]
 
+class PengaduanViewSet(viewsets.ModelViewSet):
+    queryset = Pengaduan.objects.all().order_by('-id')
+    serializer_class = PengaduanSerializer
+    permission_classes = [AllowAny] # Set ke IsAuthenticated jika ingin wajib login
+    
 # ViewSet tetap dipertahankan jika kamu ingin fitur pencarian/filter yang canggih
 class WargaViewSet(viewsets.ModelViewSet):
     queryset = Warga.objects.all().order_by('-tanggal_registrasi')

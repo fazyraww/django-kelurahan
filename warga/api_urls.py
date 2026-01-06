@@ -1,9 +1,10 @@
 from django.urls import path, include
-from .views import WargaListAPIView, WargaDetailAPIView, PengaduanListAPIView, WargaViewSet
+from .views import WargaListAPIView, WargaDetailAPIView, PengaduanListAPIView, WargaViewSet, PengaduanViewSet
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'warga', WargaViewSet, basename='warga')
+router.register(r'aduan', PengaduanViewSet, basename='aduan')
 
 urlpatterns = [
     # path('warga/', WargaListAPIView.as_view(), name='api-warga-list'),
