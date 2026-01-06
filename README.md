@@ -64,7 +64,7 @@ pip install django-cors-headers
 python manage.py makemigrations
 python manage.py migrate
 
-``` bash
+```
 python manage.py createsuperuser
 
 ### 5️⃣ Jalankan Server
